@@ -1,5 +1,5 @@
 {
-  "name": "gzip-merger",
+  "name": "redis-gzip",
   "version": "1.6.0",
   "description": "Paquete que usamos para manejar redis y mergear cosas",
   "main": "index.js",
@@ -8,9 +8,9 @@
     "watch": "mocha --reporter spec --no-timeouts --watch"
   },
   "bugs": {
-    "url": "https://github.com/eugenioclrc/gzip-merger/issues"
+    "url": "https://github.com/eugenioclrc/redis-gzip/issues"
   },
-  "homepage": "https://github.com/eugenioclrc/gzip-merger#readme",
+  "homepage": "https://github.com/eugenioclrc/redis-gzip#readme",
   "dependencies": {
     "redis": "^2.8.0"
   },
