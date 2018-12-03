@@ -1,6 +1,6 @@
 {
   "name": "redis-gzip",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Paquete que usamos para manejar redis y mergear cosas",
   "main": "index.js",
   "scripts": {

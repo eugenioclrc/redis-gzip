@@ -54,13 +54,15 @@ function buildRedisGzip(hostname, port) {
     return simpleset(key, compresed, expire);
   }
 
-  async function get(key) {
+  async function get(key, verbose = true) {
     const data = await redisGet(Buffer.from(key));
     if (!data) {
-      const message = `REDIS: no data for key: ${key}`;
-      console.log(message);
-      const emptyDataError = new Error(message);
-      console.log(emptyDataError.stack);
+      if (verbose) {
+        const message = `REDIS: no data for key: ${key}`;
+        console.log(message);
+        const emptyDataError = new Error(message);
+        console.log(emptyDataError.stack);
+      }
       return undefined;
     }
     try {
@@ -72,6 +74,7 @@ function buildRedisGzip(hostname, port) {
   }
 
   return {
+    client,
     connect,
 
     close,
