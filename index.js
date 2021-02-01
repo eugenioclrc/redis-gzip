@@ -54,7 +54,7 @@ function buildRedisGzip(hostname, port) {
     return simpleset(key, compresed, expire);
   }
 
-  async function get(key, verbose = true) {
+  async function get(key, verbose = false) {
     const data = await redisGet(Buffer.from(key));
     if (!data) {
       if (verbose) {
