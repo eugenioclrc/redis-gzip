@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/eugenioclrc/redis-gzip#readme",
   "dependencies": {
-    "redis": "^3.0.2"
+    "redis": "^3.1.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
